@@ -1,0 +1,43 @@
+{
+  "name": "sortera",
+  "description": "Minimal dependency free and fast library for adding interactive sorting to any HTML5 table",
+  "keywords": [
+    "table",
+    "sorting",
+    "sort",
+    "sortera",
+    "html5",
+    "tablesort",
+    "jquery-plugin",
+    "jquery",
+    "amd",
+    "node"
+  ],
+  "authors": [
+    { "name": "Robin Nilsson", "homepage": "https://github.com/hexagon" }
+  ],
+  "homepage": "https://github.com/hexagon/sortera",
+  "main": [
+    "lib/sortera.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexagon/sortera"
+  },
+  "license" : [
+    "MIT"
+  ],
+  "ignore": [
+    ".eslintrc.json",
+    "package.json",
+    "/examples",
+    "/.git"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "dependencies": { },
+  "devDependencies": { }
+}

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+    <!-- jQuery.sortera -->
+    <script src="../lib/sortera.js"></script>
+
+    <!-- Sort table -->
+    <script>
+      $(document).ready(function() {
+        // sortera - Usage
+        $('.table').sortera({
+          sortOrder: [
+            {col: 1, order: 1},
+            {col: 0, order: -1}
+          ],
+          multi: true,
+          ignore: [4]
+        });
+      });
+    </script>
+
+    <style>
+      .table thead {
+        white-space: nowrap;
+        user-select: none;
+      }
+      .s-not-sortable {
+        color: #999999;
+      }
+    </style>
+
+  </head> 
+  <body>
+
+    <nav class="navbar navbar-full navbar-dark bg-inverse">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <a class="navbar-brand" href="#">sortera jquery example</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <main class="row">
+        <div class="col-md-8">
+          <h1></h1>
+        <table id="example" class="table display dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="example_info">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Surname</th>
+              <th>Description</th>
+              <th>City</th>
+              <th>Zip</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Walker</td>
+            <td>Cline</td>
+            <td>elit, a feugiat tellus lorem eu metus. In lorem. Donec</td>
+            <td>Toronto</td>
+            <td>340479</td>
+          </tr>
+          <tr>
+            <td>Christian</td>
+            <td>Harper</td>
+            <td>lectus pede et risus. Quisque libero lacus, varius et, euismod</td>
+            <td>Wardin</td>
+            <td>50200</td>
+          </tr>
+          <tr>
+            <td>Warren</td>
+            <td>Phelps</td>
+            <td>orci lacus vestibulum lorem, sit amet ultricies sem magna nec</td>
+            <td>Moerkerke</td>
+            <td>8066</td>
+          </tr>
+          <tr>
+            <td>Ryder</td>
+            <td>Wiley</td>
+            <td>eget massa. Suspendisse eleifend. Cras sed leo. Cras vehicula aliquet</td>
+            <td>Torrevecchia Teatina</td>
+            <td>977129</td>
+          </tr>
+          <tr>
+            <td>Christian</td>
+            <td>Jenkins</td>
+            <td>laoreet ipsum. Curabitur consequat, lectus sit amet luctus vulputate, nisi</td>
+            <td>Chatillon</td>
+            <td>74884</td>
+          </tr>
+          <tr>
+            <td>Ezra</td>
+            <td>Myers</td>
+            <td>Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean egestas</td>
+            <td>Schönebeck</td>
+            <td>986927</td>
+          </tr>
+          <tr>
+            <td>Dillon</td>
+            <td>Alexander</td>
+            <td>scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas lacinia.</td>
+            <td>Huntsville</td>
+            <td>1468</td>
+          </tr>
+          <tr>
+            <td>Upton</td>
+            <td>Dominguez</td>
+            <td>orci luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec</td>
+            <td>Grimma</td>
+            <td>9761XZ</td>
+          </tr>
+          <tr>
+            <td>Bradley</td>
+            <td>Stewart</td>
+            <td>parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor.</td>
+            <td>Castiglione a Casauria</td>
+            <td>8100</td>
+          </tr>
+          <tr>
+            <td>Lucius</td>
+            <td>Romero</td>
+            <td>justo. Praesent luctus. Curabitur egestas nunc sed libero. Proin sed</td>
+            <td>Avin</td>
+            <td>96636</td>
+          </tr>
+          <tr>
+            <td>Kamal</td>
+            <td>Hickman</td>
+            <td>sem, consequat nec, mollis vitae, posuere at, velit. Cras lorem</td>
+            <td>Milena</td>
+            <td>69-115</td>
+          </tr>
+          <tr>
+            <td>Louis</td>
+            <td>Diaz</td>
+            <td>dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero.</td>
+            <td>Thunder Bay</td>
+            <td>8671FA</td>
+          </tr>
+          <tr>
+            <td>Dolan</td>
+            <td>Kaufman</td>
+            <td>libero. Donec consectetuer mauris id sapien. Cras dolor dolor, tempus</td>
+            <td>Camaragibe</td>
+            <td>60543</td>
+          </tr>
+          <tr>
+            <td>Jesse</td>
+            <td>Contreras</td>
+            <td>mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus</td>
+            <td>Marystown</td>
+            <td>1951</td>
+          </tr>
+          <tr>
+            <td>Driscoll</td>
+            <td>Reynolds</td>
+            <td>lorem vitae odio sagittis semper. Nam tempor diam dictum sapien.</td>
+            <td>Kaaskerke</td>
+            <td>10863</td>
+          </tr>
+          <tr>
+            <td>Joshua</td>
+            <td>Abbott</td>
+            <td>sed leo. Cras vehicula aliquet libero. Integer in magna. Phasellus</td>
+            <td>Arauco</td>
+            <td>6012</td>
+          </tr>
+          <tr>
+            <td>Abraham</td>
+            <td>Wood</td>
+            <td>dolor. Nulla semper tellus id nunc interdum feugiat. Sed nec</td>
+            <td>Roveredo in Piano</td>
+            <td>0832</td>
+          </tr>
+          <tr>
+            <td>Ashton</td>
+            <td>Cantu</td>
+            <td>gravida non, sollicitudin a, malesuada id, erat. Etiam vestibulum massa</td>
+            <td>Falun</td>
+            <td>34-804</td>
+          </tr>
+          <tr>
+            <td>Walter</td>
+            <td>Baldwin</td>
+            <td>cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices iaculis</td>
+            <td>Mundare</td>
+            <td>0759PG</td>
+          </tr>
+          <tr>
+            <td>Kyle</td>
+            <td>Hunt</td>
+            <td>natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</td>
+            <td>Castor</td>
+            <td>3318</td>
+          </tr>
+          <tr>
+            <td>Ronan</td>
+            <td>Small</td>
+            <td>molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare,</td>
+            <td>Olinda</td>
+            <td>7877</td>
+          </tr>
+          <tr>
+            <td>Elvis</td>
+            <td>Stein</td>
+            <td>neque vitae semper egestas, urna justo faucibus lectus, a sollicitudin</td>
+            <td>Ternat</td>
+            <td>45583-973</td>
+          </tr>
+          <tr>
+            <td>Sylvester</td>
+            <td>Bentley</td>
+            <td>dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies</td>
+            <td>Bonnyville</td>
+            <td>20395</td>
+          </tr>
+          <tr>
+            <td>Igor</td>
+            <td>Cain</td>
+            <td>enim mi tempor lorem, eget mollis lectus pede et risus.</td>
+            <td>Alix</td>
+            <td>13072</td>
+          </tr>
+          <tr>
+            <td>Cyrus</td>
+            <td>Bruce</td>
+            <td>sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus</td>
+            <td>Fosses-la-Ville</td>
+            <td>510349</td>
+          </tr>
+          <tr>
+            <td>Cain</td>
+            <td>Byers</td>
+            <td>nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere</td>
+            <td>Jhansi</td>
+            <td>575408</td>
+          </tr>
+          <tr>
+            <td>Elijah</td>
+            <td>Jefferson</td>
+            <td>ligula. Nullam enim. Sed nulla ante, iaculis nec, eleifend non,</td>
+            <td>Sandy</td>
+            <td>6939</td>
+          </tr>
+          <tr>
+            <td>Gavin</td>
+            <td>Smith</td>
+            <td>sed turpis nec mauris blandit mattis. Cras eget nisi dictum</td>
+            <td>Saint-Denis-Bovesse</td>
+            <td>60810</td>
+          </tr>
+          <tr>
+            <td>Cole</td>
+            <td>Harrington</td>
+            <td>ac mattis velit justo nec ante. Maecenas mi felis, adipiscing</td>
+            <td>Leduc</td>
+            <td>42638</td>
+          </tr>
+          <tr>
+            <td>Elijah</td>
+            <td>Mathis</td>
+            <td>Integer vulputate, risus a ultricies adipiscing, enim mi tempor lorem,</td>
+            <td>Montgomery</td>
+            <td>20775</td>
+          </tr>
+          <tr>
+            <td>Orson</td>
+            <td>Sheppard</td>
+            <td>metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper</td>
+            <td>Rio Verde</td>
+            <td>49667</td>
+          </tr>
+          <tr>
+            <td>Slade</td>
+            <td>Pope</td>
+            <td>vel nisl. Quisque fringilla euismod enim. Etiam gravida molestie arcu.</td>
+            <td>Gambolò</td>
+            <td>93-537</td>
+          </tr>
+          <tr>
+            <td>Drew</td>
+            <td>Kirby</td>
+            <td>id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis</td>
+            <td>Okotoks</td>
+            <td>81003</td>
+          </tr>
+          <tr>
+            <td>Matthew</td>
+            <td>Burgess</td>
+            <td>dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus</td>
+            <td>Purén</td>
+            <td>K3U 6IU</td>
+          </tr>
+          <tr>
+            <td>Malcolm</td>
+            <td>Cabrera</td>
+            <td>non, egestas a, dui. Cras pellentesque. Sed dictum. Proin eget</td>
+            <td>Lives-sur-Meuse</td>
+            <td>40109</td>
+          </tr>
+          <tr>
+            <td>Tarik</td>
+            <td>Rodgers</td>
+            <td>faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis</td>
+            <td>Bekkerzeel</td>
+            <td>2114</td>
+          </tr>
+          <tr>
+            <td>Fuller</td>
+            <td>Keith</td>
+            <td>sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum</td>
+            <td>Fort McPherson</td>
+            <td>6552</td>
+          </tr>
+          <tr>
+            <td>Zachery</td>
+            <td>Rich</td>
+            <td>ac nulla. In tincidunt congue turpis. In condimentum. Donec at</td>
+            <td>Dessau</td>
+            <td>04052</td>
+          </tr>
+          <tr>
+            <td>Chadwick</td>
+            <td>Lambert</td>
+            <td>Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt nibh. Phasellus</td>
+            <td>Rae Bareli</td>
+            <td>47807-916</td>
+          </tr>
+          <tr>
+            <td>Allistair</td>
+            <td>Sears</td>
+            <td>nec, cursus a, enim. Suspendisse aliquet, sem ut cursus luctus,</td>
+            <td>Juan Fernández</td>
+            <td>J5M 0S6</td>
+          </tr>
+          <tr>
+            <td>Martin</td>
+            <td>Goff</td>
+            <td>Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra.</td>
+            <td>Sachs Harbour</td>
+            <td>9765</td>
+          </tr>
+          <tr>
+            <td>Yoshio</td>
+            <td>Gould</td>
+            <td>orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus sit</td>
+            <td>Lac Ste. Anne</td>
+            <td>GC4 2WN</td>
+          </tr>
+          <tr>
+            <td>Jesse</td>
+            <td>Cash</td>
+            <td>Duis a mi fringilla mi lacinia mattis. Integer eu lacus.</td>
+            <td>Elsene</td>
+            <td>27606-260</td>
+          </tr>
+          <tr>
+            <td>Knox</td>
+            <td>Cooper</td>
+            <td>Fusce feugiat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+            <td>Seattle</td>
+            <td>09733</td>
+          </tr>
+          <tr>
+            <td>Brandon</td>
+            <td>Allison</td>
+            <td>Phasellus dolor elit, pellentesque a, facilisis non, bibendum sed, est.</td>
+            <td>Sambalpur</td>
+            <td>664109</td>
+          </tr>
+          <tr>
+            <td>Philip</td>
+            <td>Hurley</td>
+            <td>convallis erat, eget tincidunt dui augue eu tellus. Phasellus elit</td>
+            <td>Queilén</td>
+            <td>28442</td>
+          </tr>
+          <tr>
+            <td>Zeph</td>
+            <td>Lawrence</td>
+            <td>dictum eu, eleifend nec, malesuada ut, sem. Nulla interdum. Curabitur</td>
+            <td>Rotem</td>
+            <td>69713</td>
+          </tr>
+          <tr>
+            <td>Chester</td>
+            <td>White</td>
+            <td>nulla ante, iaculis nec, eleifend non, dapibus rutrum, justo. Praesent</td>
+            <td>Rathenow</td>
+            <td>92985</td>
+          </tr>
+          <tr>
+            <td>Valentine</td>
+            <td>Pacheco</td>
+            <td>laoreet lectus quis massa. Mauris vestibulum, neque sed dictum eleifend,</td>
+            <td>Alnwick</td>
+            <td>281060</td>
+          </tr>
+          <tr>
+            <td>Allistair</td>
+            <td>Stokes</td>
+            <td>odio. Phasellus at augue id ante dictum cursus. Nunc mauris</td>
+            <td>Norman Wells</td>
+            <td>2688</td>
+          </tr>
+          <tr>
+            <td>Solomon</td>
+            <td>Kim</td>
+            <td>malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus in felis.</td>
+            <td>Sart-Eustache</td>
+            <td>470240</td>
+          </tr>
+          <tr>
+            <td>Garrison</td>
+            <td>Sampson</td>
+            <td>non, egestas a, dui. Cras pellentesque. Sed dictum. Proin eget</td>
+            <td>Avesta</td>
+            <td>49-888</td>
+          </tr>
+          <tr>
+            <td>Akeem</td>
+            <td>Vasquez</td>
+            <td>Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices iaculis odio.</td>
+            <td>Püttlingen</td>
+            <td>41414</td>
+          </tr>
+          <tr>
+            <td>Joshua</td>
+            <td>Leach</td>
+            <td>ipsum. Suspendisse non leo. Vivamus nibh dolor, nonummy ac, feugiat</td>
+            <td>Colleretto Castelnuovo</td>
+            <td>2072</td>
+          </tr>
+          <tr>
+            <td>Leo</td>
+            <td>Perry</td>
+            <td>magna. Phasellus dolor elit, pellentesque a, facilisis non, bibendum sed,</td>
+            <td>Hulst</td>
+            <td>3657FG</td>
+          </tr>
+          <tr>
+            <td>Aidan</td>
+            <td>Osborn</td>
+            <td>auctor, nunc nulla vulputate dui, nec tempus mauris erat eget</td>
+            <td>Padre las Casas</td>
+            <td>60114</td>
+          </tr>
+          <tr>
+            <td>Stewart</td>
+            <td>Guthrie</td>
+            <td>semper cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices</td>
+            <td>Kuşadası</td>
+            <td>06245</td>
+          </tr>
+          <tr>
+            <td>Gabriel</td>
+            <td>Lowe</td>
+            <td>Proin nisl sem, consequat nec, mollis vitae, posuere at, velit.</td>
+            <td>Beervelde</td>
+            <td>40845-130</td>
+          </tr>
+          <tr>
+            <td>Paki</td>
+            <td>Roberts</td>
+            <td>euismod in, dolor. Fusce feugiat. Lorem ipsum dolor sit amet,</td>
+            <td>New Westminster</td>
+            <td>00559</td>
+          </tr>
+          <tr>
+            <td>Rajah</td>
+            <td>Castro</td>
+            <td>auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris</td>
+            <td>Bungay</td>
+            <td>P6R 0P7</td>
+          </tr>
+          <tr>
+            <td>Alec</td>
+            <td>Greene</td>
+            <td>lorem eu metus. In lorem. Donec elementum, lorem ut aliquam</td>
+            <td>Grimma</td>
+            <td>71611</td>
+          </tr>
+          <tr>
+            <td>Zeph</td>
+            <td>Pratt</td>
+            <td>sed consequat auctor, nunc nulla vulputate dui, nec tempus mauris</td>
+            <td>Dörtyol</td>
+            <td>1040</td>
+          </tr>
+          <tr>
+            <td>Zeus</td>
+            <td>Preston</td>
+            <td>lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante</td>
+            <td>Vienna</td>
+            <td>0207</td>
+          </tr>
+          <tr>
+            <td>Ali</td>
+            <td>Hutchinson</td>
+            <td>Sed auctor odio a purus. Duis elementum, dui quis accumsan</td>
+            <td>Pogliano Milanese</td>
+            <td>LN16 3LJ</td>
+          </tr>
+          <tr>
+            <td>Wang</td>
+            <td>Dorsey</td>
+            <td>lorem, eget mollis lectus pede et risus. Quisque libero lacus,</td>
+            <td>Orlando</td>
+            <td>56234</td>
+          </tr>
+          <tr>
+            <td>Prescott</td>
+            <td>Rojas</td>
+            <td>sed leo. Cras vehicula aliquet libero. Integer in magna. Phasellus</td>
+            <td>Montresta</td>
+            <td>ZC0 4VN</td>
+          </tr>
+          <tr>
+            <td>Stewart</td>
+            <td>Carr</td>
+            <td>Praesent eu dui. Cum sociis natoque penatibus et magnis dis</td>
+            <td>Cuglieri</td>
+            <td>47490</td>
+          </tr>
+          <tr>
+            <td>Kieran</td>
+            <td>Estes</td>
+            <td>a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc</td>
+            <td>Hilo</td>
+            <td>534460</td>
+          </tr>
+          <tr>
+            <td>Melvin</td>
+            <td>Barry</td>
+            <td>dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl.</td>
+            <td>Khanewal</td>
+            <td>31323</td>
+          </tr>
+          <tr>
+            <td>Joseph</td>
+            <td>Walls</td>
+            <td>Integer vulputate, risus a ultricies adipiscing, enim mi tempor lorem,</td>
+            <td>North Cowichan</td>
+            <td>65838-059</td>
+          </tr>
+          <tr>
+            <td>Kareem</td>
+            <td>Baxter</td>
+            <td>lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in</td>
+            <td>Pisa</td>
+            <td>67482</td>
+          </tr>
+          <tr>
+            <td>Adam</td>
+            <td>George</td>
+            <td>parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique</td>
+            <td>Avelgem</td>
+            <td>53600</td>
+          </tr>
+          <tr>
+            <td>Stewart</td>
+            <td>Odonnell</td>
+            <td>ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula.</td>
+            <td>Saint-LŽger</td>
+            <td>81141</td>
+          </tr>
+          <tr>
+            <td>Reece</td>
+            <td>Oliver</td>
+            <td>egestas, urna justo faucibus lectus, a sollicitudin orci sem eget</td>
+            <td>Saint-Remy</td>
+            <td>27366</td>
+          </tr>
+          <tr>
+            <td>Garrett</td>
+            <td>Robinson</td>
+            <td>turpis vitae purus gravida sagittis. Duis gravida. Praesent eu nulla</td>
+            <td>Helensburgh</td>
+            <td>77330</td>
+          </tr>
+          <tr>
+            <td>Robert</td>
+            <td>Sheppard</td>
+            <td>In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede</td>
+            <td>Londrina</td>
+            <td>08971</td>
+          </tr>
+          <tr>
+            <td>Emmanuel</td>
+            <td>Sharpe</td>
+            <td>sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum</td>
+            <td>San Juan de la Costa</td>
+            <td>92950</td>
+          </tr>
+          <tr>
+            <td>Hyatt</td>
+            <td>Yang</td>
+            <td>sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis,</td>
+            <td>Zelem</td>
+            <td>50102</td>
+          </tr>
+          <tr>
+            <td>Avram</td>
+            <td>Cooper</td>
+            <td>Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec</td>
+            <td>St. Petersburg</td>
+            <td>2784</td>
+          </tr>
+          <tr>
+            <td>Dieter</td>
+            <td>Morrow</td>
+            <td>vulputate, lacus. Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse non</td>
+            <td>Sprimont</td>
+            <td>59162-518</td>
+          </tr>
+          <tr>
+            <td>Damian</td>
+            <td>Kidd</td>
+            <td>luctus lobortis. Class aptent taciti sociosqu ad litora torquent per</td>
+            <td>La Unión</td>
+            <td>22368-473</td>
+          </tr>
+          <tr>
+            <td>Zahir</td>
+            <td>Oneill</td>
+            <td>eros non enim commodo hendrerit. Donec porttitor tellus non magna.</td>
+            <td>Fort Simpson</td>
+            <td>1649</td>
+          </tr>
+          <tr>
+            <td>William</td>
+            <td>William</td>
+            <td>eget massa. Suspendisse eleifend. Cras sed leo. Cras vehicula aliquet</td>
+            <td>Riesa</td>
+            <td>77324</td>
+          </tr>
+          <tr>
+            <td>Linus</td>
+            <td>Garner</td>
+            <td>venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec</td>
+            <td>Wilhelmshaven</td>
+            <td>10713</td>
+          </tr>
+          <tr>
+            <td>Mannix</td>
+            <td>Cervantes</td>
+            <td>mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus</td>
+            <td>Kooigem</td>
+            <td>2111GW</td>
+          </tr>
+          <tr>
+            <td>Fuller</td>
+            <td>Sampson</td>
+            <td>enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris</td>
+            <td>Birmingham</td>
+            <td>254344</td>
+          </tr>
+          <tr>
+            <td>Reece</td>
+            <td>Stone</td>
+            <td>nec quam. Curabitur vel lectus. Cum sociis natoque penatibus et</td>
+            <td>Goslar</td>
+            <td>52354</td>
+          </tr>
+          <tr>
+            <td>Quamar</td>
+            <td>Strickland</td>
+            <td>tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem</td>
+            <td>Souvret</td>
+            <td>7529</td>
+          </tr>
+          <tr>
+            <td>Chester</td>
+            <td>Jones</td>
+            <td>vitae diam. Proin dolor. Nulla semper tellus id nunc interdum</td>
+            <td>Kitscoty</td>
+            <td>18970</td>
+          </tr>
+          <tr>
+            <td>Oliver</td>
+            <td>Knight</td>
+            <td>luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed</td>
+            <td>Aylesbury</td>
+            <td>128497</td>
+          </tr>
+          <tr>
+            <td>Orson</td>
+            <td>Tucker</td>
+            <td>ante lectus convallis est, vitae sodales nisi magna sed dui.</td>
+            <td>Pinneberg</td>
+            <td>387469</td>
+          </tr>
+          <tr>
+            <td>Mason</td>
+            <td>Davenport</td>
+            <td>Aliquam ultrices iaculis odio. Nam interdum enim non nisi. Aenean</td>
+            <td>Santa Maria</td>
+            <td>94556-909</td>
+          </tr>
+          <tr>
+            <td>Jasper</td>
+            <td>Howell</td>
+            <td>diam. Proin dolor. Nulla semper tellus id nunc interdum feugiat.</td>
+            <td>Bredene</td>
+            <td>05809</td>
+          </tr>
+          <tr>
+            <td>Derek</td>
+            <td>Payne</td>
+            <td>Donec at arcu. Vestibulum ante ipsum primis in faucibus orci</td>
+            <td>Vierzon</td>
+            <td>20910</td>
+          </tr>
+          <tr>
+            <td>Emmanuel</td>
+            <td>Russell</td>
+            <td>et ultrices posuere cubilia Curae; Donec tincidunt. Donec vitae erat</td>
+            <td>Bhimavaram</td>
+            <td>753891</td>
+          </tr>
+          <tr>
+            <td>Barry</td>
+            <td>Brewer</td>
+            <td>elit sed consequat auctor, nunc nulla vulputate dui, nec tempus</td>
+            <td>Beausejour</td>
+            <td>8154</td>
+          </tr>
+          <tr>
+            <td>Harding</td>
+            <td>Riddle</td>
+            <td>Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae</td>
+            <td>Chetwynd</td>
+            <td>27295</td>
+          </tr>
+          <tr>
+            <td>Jared</td>
+            <td>Garrett</td>
+            <td>rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam</td>
+            <td>Raichur</td>
+            <td>122831</td>
+          </tr>
+          <tr>
+            <td>Marvin</td>
+            <td>Church</td>
+            <td>hendrerit a, arcu. Sed et libero. Proin mi. Aliquam gravida</td>
+            <td>Kharagpur</td>
+            <td>86326</td>
+          </tr>
+          <tr>
+            <td>Boris</td>
+            <td>Kramer</td>
+            <td>justo faucibus lectus, a sollicitudin orci sem eget massa. Suspendisse</td>
+            <td>Hof</td>
+            <td>09062</td>
+          </tr>
+          </table>
+        </div>
+        <div class="col-md-4">
+          Click the column headers to change sort order.
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
