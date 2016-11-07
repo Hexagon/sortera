@@ -1,6 +1,6 @@
 {
   "name": "sortera",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal dependency free and fast library for adding interactive sorting to any HTML5 table",
   "author": "Hexagon <github.com/hexagon>",
   "contributors": [],
