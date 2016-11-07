@@ -1,6 +1,7 @@
 # sortera
 
 [![npm version](https://badge.fury.io/js/sortera.svg)](https://badge.fury.io/js/sortera)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/83e514f5a2224cd5b9e2dd868daafef3)](https://www.codacy.com/app/robinnilsson/sortera?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Hexagon/sortera&amp;utm_campaign=Badge_Grade)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
