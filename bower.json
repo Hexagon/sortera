@@ -14,7 +14,10 @@
     "node"
   ],
   "authors": [
-    { "name": "Robin Nilsson", "homepage": "https://github.com/hexagon" }
+    {
+      "name": "Robin Nilsson",
+      "homepage": "https://github.com/hexagon"
+    }
   ],
   "homepage": "https://github.com/hexagon/sortera",
   "main": [
@@ -24,7 +27,7 @@
     "type": "git",
     "url": "https://github.com/hexagon/sortera"
   },
-  "license" : [
+  "license": [
     "MIT"
   ],
   "ignore": [
@@ -38,6 +41,7 @@
     "globals",
     "node"
   ],
-  "dependencies": { },
-  "devDependencies": { }
+  "dependencies": {},
+  "devDependencies": {},
+  "version": "1.0.1"
 }
