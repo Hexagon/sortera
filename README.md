@@ -51,9 +51,24 @@ For a full implementation and demo, see [hexagon.github.io/sortera/usage.jquery.
 
 Installation
 ----
-**To Do**
 
-Download latest [zipball](http://github.com/Hexagon/sortera/zipball/master/), unpack, grab sortera.js (or sortera.min.js) from the [lib/](/lib) folder.
+# Manual
+
+ * Download latest [zipball](http://github.com/Hexagon/sortera/zipball/master/)
+ * Unpack
+ * Grab sortera.js (or sortera.min.js) from the [lib/](/lib) folder
+
+# Bower
+
+```sh
+bower install sortera
+```
+
+# npm
+
+```sh
+npm install sortera
+```
 
 
 License
