@@ -49,7 +49,7 @@ Installation
 ----
 **To Do**
 
-Download latest zipball, unpack, grab sortera.js (or sortera.min.js) from the [./lib/](/lib) folder.
+Download latest [zipball](http://github.com/Hexagon/sortera/zipball/master/), unpack, grab sortera.js (or sortera.min.js) from the [lib/](/lib) folder.
 
 
 License
