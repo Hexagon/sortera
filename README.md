@@ -25,7 +25,7 @@ sortera(theTable, {
 });
 ```
 
-For a full implementation and demo, see (https://hexagon.github.io/sortera/usage.standalone.html)[https://hexagon.github.io/sortera/usage.standalone.html]
+For a full implementation and demo, see [hexagon.github.io/sortera/usage.standalone.html](https://hexagon.github.io/sortera/usage.standalone.html)
 
 
 ### As jQuery plugin
@@ -42,14 +42,14 @@ $('#thetable').sortera({
 });
 ```
 
-For a full implementation and demo, see (https://hexagon.github.io/sortera/usage.jquery.html)[https://hexagon.github.io/sortera/usage.jquery.html]
+For a full implementation and demo, see [hexagon.github.io/sortera/usage.jquery.html](https://hexagon.github.io/sortera/usage.jquery.html)
 
 
 Installation
 ----
 **To Do**
 
-Download latest zipball, unpack, grab sortera.js (or sortera.min.js) from the lib folder.
+Download latest zipball, unpack, grab sortera.js (or sortera.min.js) from the [./lib/](/lib) folder.
 
 
 License
