@@ -1,5 +1,9 @@
 # sortera
 
+[![npm version](https://badge.fury.io/js/sortera.svg)](https://badge.fury.io/js/sortera)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://img.shields.io/badge/license-MIT-blue.svg)
+
+
 **Minimal**, dependency free and fast library for adding interactive sorting to any HTML5 table.
 
 Supports standalone usage, AMD style require (Dojo Toolkit, RequireJS,  ScriptManJS) 
