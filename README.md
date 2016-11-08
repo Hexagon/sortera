@@ -53,6 +53,22 @@ For a full implementation and demo, see [hexagon.github.io/sortera/usage.jquery.
 Installation
 ----
 
+### cdn
+
+Copy and paste one of the following script tags.
+
+**Minified**
+
+```html
+<script src="//cdn.56k.guru/js/sortera/latest/sortera.min.js"></script>
+```
+
+**Full**
+
+```html
+<script src="//cdn.56k.guru/js/sortera/latest/sortera.js"></script>
+```
+
 ### Manual
 
  * Download latest [zipball](http://github.com/Hexagon/sortera/zipball/master/)
