@@ -32,7 +32,7 @@ var el = document.getElementById('#sortme');
 sortera(el, { multi: true });
 ```
 
-Live demo at [examples/usage.standalone.html](/examples/usage.standalone.html)
+Live demo at [examples/usage.standalone.html](/sortera/examples/usage.standalone.html)
 
 ---
 
@@ -54,7 +54,7 @@ $('#sortme').sortera({
 });
 ```
 
-Live demo at [examples/usage.jquery.html](/examples/usage.jquery.html)
+Live demo at [examples/usage.jquery.html](/sortera/examples/usage.jquery.html)
 
 ---
 

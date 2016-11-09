@@ -20,7 +20,7 @@ Sortera is a standalone, minimalistic yet powerful, javascript library that make
 
 Sortera works by attaching events to the table headers of an existing table, hence your table need to have a ```html <thead> </thead>``` section, or ```<th>``` instead of ```<td>``` for column headers. See example tables to the rights.
 
-For full documentation, see [hexagon.github.io/sortera](hexagon.github.io/sortera)
+For full documentation, see [hexagon.github.io/sortera](http://hexagon.github.io/sortera)
 
 Examples
 ----
