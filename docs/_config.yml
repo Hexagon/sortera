@@ -1,0 +1,35 @@
+# ----
+# Site
+
+title: Sortera
+description: Minimal, dependency free and fast library for making any HTML table sortable.
+url: https://hexagon.github.io/sortera
+
+collections:
+  documentation:
+    title: Documentation
+    position: 1
+   
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - readme.md
+  - LICENCE
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+# -----
+# Build
+
+
+# -----------
+# CloudCannon
+
+version: 3.0.3

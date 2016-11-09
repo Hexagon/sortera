@@ -4,12 +4,23 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/83e514f5a2224cd5b9e2dd868daafef3)](https://www.codacy.com/app/robinnilsson/sortera?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Hexagon/sortera&amp;utm_campaign=Badge_Grade)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://img.shields.io/badge/license-MIT-blue.svg)
 
+Sortera is a standalone, minimalistic yet powerful, javascript library that makes any HTML-table interactively sortable.
 
-**Minimal**, dependency free and fast library for adding interactive sorting to any HTML5 table.
+**Highligts**
 
-Supports standalone usage, AMD style require (Dojo Toolkit, RequireJS,  ScriptManJS) 
-as well as CommonJs style export.
+ * Small footprint
+ * Highly optimized code
+ * Not _relying_ on any third party libraries of any kind
+ * Multi column sorting
+ * Adapts to the application, supporting the following techiques
+    * Stand-alone usage
+    * Registers itself as a [jQuery](https://jquery.com/)-plugin if jQuery is present
+    * [AMD](https://en.wikipedia.org/wiki/Asynchronous_module_definition) export ([Dojo Toolkit](https://dojotoolkit.org), [RequireJS](http://requirejs.org/),  ScriptManJS)
+    * [CommonJS](https://en.wikipedia.org/wiki/CommonJS)-style export
 
+Sortera works by attaching events to the table headers of an existing table, hence your table need to have a ```html <thead> </thead>``` section, or ```<th>``` instead of ```<td>``` for column headers. See example tables to the rights.
+
+For full documentation, see [hexagon.github.io/sortera](hexagon.github.io/sortera)
 
 Examples
 ----
@@ -30,7 +41,7 @@ sortera(theTable, {
 });
 ```
 
-For a full implementation and demo, see [hexagon.github.io/sortera/usage.standalone.html](https://hexagon.github.io/sortera/usage.standalone.html)
+For a full implementation and demo, see [hexagon.github.io/sortera/examples/usage.standalone.html](https://hexagon.github.io/sortera/examples/usage.standalone.html)
 
 
 ### As jQuery plugin
@@ -47,7 +58,7 @@ $('#thetable').sortera({
 });
 ```
 
-For a full implementation and demo, see [hexagon.github.io/sortera/usage.jquery.html](https://hexagon.github.io/sortera/usage.jquery.html)
+For a full implementation and demo, see [hexagon.github.io/sortera/examples/usage.jquery.html](https://hexagon.github.io/sortera/examples/usage.jquery.html)
 
 
 Installation

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+
+		<link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="{{site.baseurl}}/js/main.js"></script>
+		<script src="https://use.fontawesome.com/b87650a828.js"></script>
+		{% seo %}
+	</head>
+	<body>
+		<header >
+			<h1 style="color: #F1F2F3; background-color: #313233">
+				<a href="/"><i class="fa fa-sort-amount-desc" aria-hidden="true" style="font-size: 2.4rem; margin-right: 0.5rem; color: #F1F2F3"></i></a>&nbsp;
+				{{ site.title }}
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="{{site.baseurl}}/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search">
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			{% include sidebar.html %}
+		</header>
+		<div class="main">
+			{{ content }}
+		</div>
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>
